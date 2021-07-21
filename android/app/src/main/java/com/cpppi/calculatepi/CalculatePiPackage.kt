@@ -1,4 +1,5 @@
 package com.cppmodule.calculatepi
+import com.cpppi.calculatepi.CalculatePiModule
 import com.facebook.react.ReactPackage
 import com.facebook.react.bridge.NativeModule
 import com.facebook.react.bridge.ReactApplicationContext
