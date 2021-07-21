@@ -1,3 +1,9 @@
+# React Native C++ PI
+
+A react native module that makes use of shared C++ for both iOS and Android
+
+## Resources
+
 https://reime005.medium.com/react-native-and-c-87a2311dc3d
 https://github.com/reime005/react-native-cpp-code
 https://github.com/reime005/RNCPPExample
