@@ -1,4 +1,3 @@
-//  RCTCalendarModule.h
 #import <React/RCTBridgeModule.h>
 
 #ifdef __cplusplus
