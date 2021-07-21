@@ -1,17 +1,16 @@
 /**
  *
  */
-import { NativeModules } from 'react-native'
 import React, { useEffect, useState } from 'react'
 import { SafeAreaView, Text, View } from 'react-native'
-const { CalculatePi } = NativeModules
+import { CalculatePi } from './CalculatePi'
 
-const App = () => {
+const App: React.FC = () => {
   const [result, setResult] = useState<number | null>(null)
 
   useEffect(() => {
     setTimeout(() => {
-      CalculatePi.calculate(1e10).then((result: number) => setResult(result))
+      CalculatePi.calculate(1e10).then(setResult)
     }, 0)
   }, [])
 
