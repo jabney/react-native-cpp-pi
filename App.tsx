@@ -10,7 +10,9 @@ const App = () => {
   const [result, setResult] = useState<number | null>(null)
 
   useEffect(() => {
-    CalculatePi.calculate(1e10).then((result: number) => setResult(result))
+    setTimeout(() => {
+      CalculatePi.calculate(1e10).then((result: number) => setResult(result))
+    }, 0)
   }, [])
 
   return (
