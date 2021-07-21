@@ -1,0 +1,3 @@
+/Users/james/Projects/james/react-native-c++/CppPi/android/app/.cxx/cmake/debug/arm64-v8a/CMakeFiles/rebuild_cache.dir
+/Users/james/Projects/james/react-native-c++/CppPi/android/app/.cxx/cmake/debug/arm64-v8a/CMakeFiles/edit_cache.dir
+/Users/james/Projects/james/react-native-c++/CppPi/android/app/.cxx/cmake/debug/arm64-v8a/CMakeFiles/calculatepi.dir

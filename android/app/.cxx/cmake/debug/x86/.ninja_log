@@ -1,0 +1,6 @@
+# ninja log v5
+0	414	1626889665	CMakeFiles/calculatepi.dir/cpp-adapter.cpp.o	c81cff4e417f2130
+0	479	1626889665	CMakeFiles/calculatepi.dir/Users/james/Projects/james/react-native-c++/CppPi/cpp/pi.cpp.o	f60c716d760332c5
+479	530	1626889665	../../../../build/intermediates/cmake/debug/obj/x86/libcalculatepi.so	3b31645fd5b06f04
+1	474	1626889699	CMakeFiles/calculatepi.dir/Users/james/Projects/james/react-native-c++/CppPi/cpp/pi.cpp.o	f60c716d760332c5
+474	515	1626889699	../../../../build/intermediates/cmake/debug/obj/x86/libcalculatepi.so	3b31645fd5b06f04

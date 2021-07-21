@@ -1,0 +1,40 @@
+{
+  "stringTable": {},
+  "buildFiles": [
+    "/Users/james/Projects/james/react-native-c++/CppPi/android/CMakeLists.txt"
+  ],
+  "cleanCommandsComponents": [
+    [
+      "/Users/james/Library/Android/sdk/cmake/3.10.2.4988404/bin/ninja",
+      "-C",
+      "/Users/james/Projects/james/react-native-c++/CppPi/android/app/.cxx/cmake/debug/x86",
+      "clean"
+    ]
+  ],
+  "buildTargetsCommandComponents": [
+    "/Users/james/Library/Android/sdk/cmake/3.10.2.4988404/bin/ninja",
+    "-C",
+    "/Users/james/Projects/james/react-native-c++/CppPi/android/app/.cxx/cmake/debug/x86",
+    "{LIST_OF_TARGETS_TO_BUILD}"
+  ],
+  "libraries": {
+    "calculatepi-Debug-x86": {
+      "buildCommandComponents": [
+        "/Users/james/Library/Android/sdk/cmake/3.10.2.4988404/bin/ninja",
+        "-C",
+        "/Users/james/Projects/james/react-native-c++/CppPi/android/app/.cxx/cmake/debug/x86",
+        "calculatepi"
+      ],
+      "buildType": "debug",
+      "abi": "x86",
+      "artifactName": "calculatepi",
+      "output": "/Users/james/Projects/james/react-native-c++/CppPi/android/app/build/intermediates/cmake/debug/obj/x86/libcalculatepi.so",
+      "runtimeFiles": []
+    }
+  },
+  "toolchains": {},
+  "cFileExtensions": [],
+  "cppFileExtensions": [
+    "cpp"
+  ]
+}

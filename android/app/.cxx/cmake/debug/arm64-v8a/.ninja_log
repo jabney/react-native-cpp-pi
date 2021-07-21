@@ -1,0 +1,14 @@
+# ninja log v5
+1	404	1626887986	CMakeFiles/calculatepi.dir/cpp-adapter.cpp.o	8400fa435236ff4b
+1	456	1626887986	CMakeFiles/calculatepi.dir/Users/james/Projects/james/react-native-c++/CppPi/cpp/pi.cpp.o	425eca9f337e7fc5
+456	568	1626887986	../../../../build/intermediates/cmake/debug/obj/arm64-v8a/libcalculatepi.so	3461c74e0b96cf9b
+0	6	0	clean	538813d4815f5090
+0	5	0	clean	538813d4815f5090
+0	6	0	clean	538813d4815f5090
+2	410	1626889056	CMakeFiles/calculatepi.dir/cpp-adapter.cpp.o	8400fa435236ff4b
+2	463	1626889056	CMakeFiles/calculatepi.dir/Users/james/Projects/james/react-native-c++/CppPi/cpp/pi.cpp.o	425eca9f337e7fc5
+463	602	1626889057	../../../../build/intermediates/cmake/debug/obj/arm64-v8a/libcalculatepi.so	3461c74e0b96cf9b
+0	6	0	clean	538813d4815f5090
+1	485	1626889531	CMakeFiles/calculatepi.dir/cpp-adapter.cpp.o	8400fa435236ff4b
+1	550	1626889531	CMakeFiles/calculatepi.dir/Users/james/Projects/james/react-native-c++/CppPi/cpp/pi.cpp.o	425eca9f337e7fc5
+550	696	1626889531	../../../../build/intermediates/cmake/debug/obj/arm64-v8a/libcalculatepi.so	3461c74e0b96cf9b

@@ -1,0 +1,2 @@
+ninja: Entering directory `/Users/james/Projects/james/react-native-c++/CppPi/android/app/.cxx/cmake/debug/x86'
+ninja: no work to do.

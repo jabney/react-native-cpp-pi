@@ -1,0 +1,33 @@
+{
+  "buildFiles": [
+    "/Users/james/Projects/james/react-native-c++/CppPi/android/CMakeLists.txt"
+  ],
+  "cleanCommandsComponents": [
+    [
+      "/Users/james/Library/Android/sdk/cmake/3.10.2.4988404/bin/ninja",
+      "-C",
+      "/Users/james/Projects/james/react-native-c++/CppPi/android/app/.cxx/cmake/debug/armeabi-v7a",
+      "clean"
+    ]
+  ],
+  "buildTargetsCommandComponents": [
+    "/Users/james/Library/Android/sdk/cmake/3.10.2.4988404/bin/ninja",
+    "-C",
+    "/Users/james/Projects/james/react-native-c++/CppPi/android/app/.cxx/cmake/debug/armeabi-v7a",
+    "{LIST_OF_TARGETS_TO_BUILD}"
+  ],
+  "libraries": {
+    "calculatepi-Debug-armeabi-v7a": {
+      "artifactName": "calculatepi",
+      "buildCommandComponents": [
+        "/Users/james/Library/Android/sdk/cmake/3.10.2.4988404/bin/ninja",
+        "-C",
+        "/Users/james/Projects/james/react-native-c++/CppPi/android/app/.cxx/cmake/debug/armeabi-v7a",
+        "calculatepi"
+      ],
+      "abi": "armeabi-v7a",
+      "output": "/Users/james/Projects/james/react-native-c++/CppPi/android/app/build/intermediates/cmake/debug/obj/armeabi-v7a/libcalculatepi.so",
+      "runtimeFiles": []
+    }
+  }
+}
