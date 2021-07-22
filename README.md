@@ -39,6 +39,8 @@ class CalculatePiModule(context: ReactApplicationContext) : ReactContextBaseJava
 
 The name of the bridge function in `cpp-adapter.cpp` is `Java_com_cpppi_calculatepi_CalculatePiModule_00024Companion_calculate`, which is the package name, module name, and method name with some additional info. Knowing what this should be appears impossible, particularly the `00024` part of the companion reference. By hovering over the error given for `external fun calculate(...)` in the KT module, it gave me the name of the bridge function it was looking for and I was able to add that as the function name in `cpp-adapter.cpp`.
 
+The last thing that needs to be accounted for is getting Android Studio to process `CMakeLists.txt` so that it becomes part of the build process. There are some instructions here: https://developer.android.com/studio/projects/gradle-external-native-builds#link-with-ui that were a bit helpful (see also https://developer.android.com/studio/projects/add-native-code), but I happened upon an elusive option to "Link C++ project with Gradle" when right clicking `app/src` folders in the Project view (something I can't seem to duplicate now that it's been done). When I selected this option, I was able to point the dialog to my `CMakeLists.txt` file and Android Studio did the rest, installing some additional tools (JNI/NDK) and generating a ton of build artifacts in the `app/.cxx` folder. This bit of magic needs to happen for the `.cpp` files to be compiled and linked.
+
 Note that working with the `CMakeLists.txt` and `cpp-adapter.cpp` files was made more convenient by switching the _Project_ pane to _Project_ view instead of _Android_ view.
 
 ## Resources
@@ -50,3 +52,4 @@ Note that working with the `CMakeLists.txt` and `cpp-adapter.cpp` files was made
 - https://stackoverflow.com/questions/51288230/how-do-i-enable-c17-in-xcode-for-mac-osx
 - https://thebhwgroup.com/blog/react-native-jni
 - https://developer.android.com/studio/projects/add-native-code
+- https://developer.android.com/studio/projects/gradle-external-native-builds#link-with-ui
