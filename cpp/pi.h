@@ -3,7 +3,7 @@
 
 namespace cppmodule
 {
-    double calculate(uint64_t iterations);
+    double calculate(uint64_t iterations, size_t num_threads);
     unsigned int concurrency();
 }
 

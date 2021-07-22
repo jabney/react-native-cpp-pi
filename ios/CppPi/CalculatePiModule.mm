@@ -13,10 +13,11 @@ RCT_EXPORT_METHOD(concurrency:(RCTPromiseResolveBlock)resolve
 }
 
 RCT_EXPORT_METHOD(calculate:(nonnull NSNumber*)iterations
+                  num_threads:(nonnull NSNumber*)concurrency
                   resolver:(RCTPromiseResolveBlock)resolve
                   rejecter:(RCTPromiseRejectBlock)reject)
 {
-  auto result = cppmodule::calculate(iterations.unsignedLongLongValue);
+  auto result = cppmodule::calculate(iterations.unsignedLongLongValue, concurrency.unsignedLongLongValue);
   resolve(@(result));
 }
 

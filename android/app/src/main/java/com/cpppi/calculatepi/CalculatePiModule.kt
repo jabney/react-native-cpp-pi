@@ -8,7 +8,7 @@ import com.facebook.react.bridge.ReactMethod
 
 class CalculatePiModule(context: ReactApplicationContext) : ReactContextBaseJavaModule(context) {
     companion object {
-        external fun calculate(iterations: Long): Double
+        external fun calculate(iterations: Long, concurrency: Long): Double
         external fun concurrency(): Int
 
         init {
@@ -26,8 +26,8 @@ class CalculatePiModule(context: ReactApplicationContext) : ReactContextBaseJava
     }
 
     @ReactMethod
-    fun calculate(iterations: Double, promise: Promise) {
-        val result = calculate(iterations.toLong())
+    fun calculate(iterations: Double, concurrency: Double, promise: Promise) {
+        val result = calculate(iterations.toLong(), concurrency.toLong())
         promise.resolve(result)
     }
 }

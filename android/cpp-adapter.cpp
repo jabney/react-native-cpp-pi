@@ -16,7 +16,7 @@ Java_com_cpppi_calculatepi_CalculatePiModule_00024Companion_concurrency(JNIEnv *
 }
 
 extern "C" JNIEXPORT jdouble JNICALL
-Java_com_cpppi_calculatepi_CalculatePiModule_00024Companion_calculate(JNIEnv *env, jobject type, jlong iterations)
+Java_com_cpppi_calculatepi_CalculatePiModule_00024Companion_calculate(JNIEnv *env, jobject type, jlong iterations, jlong concurrency)
 {
-    return cppmodule::calculate(static_cast<uint64_t>(iterations));
+    return cppmodule::calculate(static_cast<uint64_t>(iterations), static_cast<uint64_t>(concurrency));
 }

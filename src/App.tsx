@@ -20,7 +20,7 @@ const App: React.FC = () => {
 
   useEffect(() => {
     if (concurrency > 0) {
-      CalculatePi.calculate(1e10).then(setResult)
+      CalculatePi.calculate(1e10, concurrency).then(setResult)
     }
   }, [concurrency])
 

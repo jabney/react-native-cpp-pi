@@ -26,7 +26,7 @@ namespace
      * Subdivide PI calculations among multiple threads.
      */
     double calculate_pi_multithreaded(uint64_t const iterations,
-                                      size_t const num_threads = thread::hardware_concurrency())
+                                      size_t const num_threads)
     {
         vector<thread *> threads(num_threads);
         uint64_t const chunk = iterations / num_threads;
@@ -56,9 +56,9 @@ namespace
 
 namespace cppmodule
 {
-    double calculate(uint64_t iterations)
+    double calculate(uint64_t const iterations, size_t const num_threads)
     {
-        return calculate_pi_multithreaded(iterations);
+        return calculate_pi_multithreaded(iterations, num_threads);
     }
 
     unsigned int concurrency()
