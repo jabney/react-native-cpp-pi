@@ -1,6 +1,6 @@
 # React Native C++ PI
 
-A react native module that makes use of shared C++ for both iOS and Android
+A react native module that makes use of shared, multithreaded C++ for both iOS and Android
 
 ## iOS
 
