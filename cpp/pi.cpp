@@ -60,4 +60,9 @@ namespace cppmodule
     {
         return calculate_pi_multithreaded(iterations);
     }
+
+    unsigned int concurrency()
+    {
+        return thread::hardware_concurrency();
+    }
 }

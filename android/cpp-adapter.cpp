@@ -9,6 +9,12 @@
 
 using namespace std;
 
+extern "C" JNIEXPORT jint JNICALL
+Java_com_cpppi_calculatepi_CalculatePiModule_00024Companion_concurrency(JNIEnv *env, jobject type)
+{
+    return cppmodule::concurrency();
+}
+
 extern "C" JNIEXPORT jdouble JNICALL
 Java_com_cpppi_calculatepi_CalculatePiModule_00024Companion_calculate(JNIEnv *env, jobject type, jlong iterations)
 {

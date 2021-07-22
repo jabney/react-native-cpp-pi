@@ -5,6 +5,13 @@
 
 RCT_EXPORT_MODULE(CalculatePi);
 
+RCT_EXPORT_METHOD(concurrency:(RCTPromiseResolveBlock)resolve
+                  rejecter:(RCTPromiseRejectBlock)reject)
+{
+  auto result = cppmodule::concurrency();
+  resolve(@(result));
+}
+
 RCT_EXPORT_METHOD(calculate:(nonnull NSNumber*)iterations
                   resolver:(RCTPromiseResolveBlock)resolve
                   rejecter:(RCTPromiseRejectBlock)reject)
@@ -12,4 +19,5 @@ RCT_EXPORT_METHOD(calculate:(nonnull NSNumber*)iterations
   auto result = cppmodule::calculate(iterations.unsignedLongLongValue);
   resolve(@(result));
 }
+
 @end
