@@ -35,18 +35,16 @@ const App: React.FC = () => {
 
   return (
     <SafeAreaView style={{ flex: 1 }}>
-      <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}>
-        {concurrency != null ? (
-          <Text>{result ?? `Calculating pi using ${concurrency} threads...`}</Text>
-        ) : (
-          <Text>Checking concurrency...</Text>
-        )}
+      <View style={{ flex: 1, padding: 12 }}>
+        <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}>
+          {concurrency != null ? (
+            <Text>{result ?? `Calculating pi using ${concurrency} threads...`}</Text>
+          ) : (
+            <Text>Checking concurrency...</Text>
+          )}
+        </View>
+        <Button text="Reset" onPress={reset} disabled={!resettable} style={{ opacity: resettable ? 1 : 0.5 }} />
       </View>
-      <Button
-        text="Reset"
-        onPress={reset}
-        disabled={!resettable}
-        style={{ marginHorizontal: 12, opacity: resettable ? 1 : 0.5 }}></Button>
     </SafeAreaView>
   )
 }
